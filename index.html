@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/landing.css" />
+    <link rel="stylesheet" href="/projects.css" />
+    <link rel="stylesheet" href="/contact.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="logo_name">
+        <h1>Khanya Gope</h1>
+      </div>
+      <div class="top-bar">
+        <a href="#landing_page">Home</a>
+        <a href="#about_page">About Me</a>
+        <a href="#portfolio_page">Portfolio</a>
+        <a href="#contact_page">Contact Me</a>
+      </div>
+    </div>
+    <section class="landing_page" id="landing_page">
+      <div class="myName">
+        <h5>back end developer</h5>
+        <h1>Khanya Gope</h1>
+        <img
+          src="https://uploads-ssl.webflow.com/5db9ac73ce618b0e1d8f9a6e/5f066c6ff51c553e32efd98c_light-green-arrow-01.png"
+        />
+      </div>
+      <div class="my_img">
+        <img src="/Khanya(FULL).JPG" />
+      </div>
+    </section>
+    <div class="separater"></div>
+    <section class="about_page" id="about_page">
+      <div class="about_me">
+        <p>
+          I am an enthusiastic, self-motivated, reliable, introvert and someone
+          who can listen effectively when solving a problem. My interest in the
+          tech industry started when I was in grade 9 where I was introduced to
+          IT. Since then I've been participating in many coding courses. The
+          more I participated in those events and courses ( CodeSpace, Code4CPT,
+          Science Expo, AWS courses and job shadowing, Girls In Tech), the more
+          I fell deeply in love with technology.
+        </p>
+      </div>
+    </section>
+    <div class="separater"></div>
+    <section class="portfolio_page" id="portfolio_page">
+      <!-- <h1 class="heading">Portfolio</h1> -->
+      <div class="button-container">
+        <button onclick="filterCards('All')">All</button>
+        <button onclick="filterCards('HTML/CSS')">HTML/CSS</button>
+        <button onclick="filterCards('Python')">Python</button>
+        <button onclick="filterCards('JavaScript')">JavaScript</button>
+      </div>
+      <div class="container"></div>
+    </section>
+    <!-- <div class="separater"></div> -->
+    <section class="contact_page" id="contact_page">
+      <div class="contact-container">
+        <div class="contact_details">
+          <!-- <h1>Khanya Gope</h1>
+          <h2>back-end Developer</h2>
+          
+          <p>
+            Fill out this form and I will contact you within 2 business days.
+            Otherwise you can reach out to me via my personal cell and or email.
+            Thanks for viewing!
+          </p>
+          <div class="test">
+            <i class="fas fa-map-marker-alt" aria-hidden="true"> </i>
+            <p>Khayelitsha, Cape Town, South Africa</p>
+          </div>
+          <div class="test">
+            <i class="fas fa-phone-square-alt" aria-hidden="true"></i>
+            <p>+27 81 445 0796</p>
+          </div>
+          <div class="test">
+            <i class="fas fa-envelope-square" aria-hidden="true"></i>
+            <p>khanyagope93@gmail.com</p>
+          </div>
+        </div>
+        -->
+
+        <!--------------CONTACT FORM-------------->
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/xzbyzobo"
+          method="POST"
+        >
+          <div id="heading">
+            <label>Contact Me</label>
+          </div>
+          <div>
+            <label for="name" id="textbox">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                required=""
+                placeholder="Enter your name"
+                class="contact-info"
+              />
+            </label>
+          </div>
+          <div>
+            <label for="surname" id="textbox">
+              <input
+                class="contact-info"
+                type="surname"
+                name="surname"
+                id="surname"
+                required=""
+                placeholder="Enter your surname"
+              />
+            </label>
+          </div>
+          <div>
+            <label for="email" id="textbox">
+              <input
+                class="contact-info"
+                type="email"
+                name="_replyto"
+                id="email"
+                required=""
+                placeholder="Enter your email"
+              />
+            </label>
+          </div>
+          <div>
+            <label for="message" id="textbox">
+              <textarea
+                name="message"
+                id="text-box"
+                placeholder="Please enter your message"
+              ></textarea>
+            </label>
+          </div>
+          <button type="submit" id="submit-btn">Send</button>
+        </form>
+      </div>
+    </section>
+    <script src="/projects.js"></script>
+  </body>
+</html>
