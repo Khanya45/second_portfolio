@@ -156,4 +156,7 @@ body {
 .contact_page {
   background: #292f36;
   height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
