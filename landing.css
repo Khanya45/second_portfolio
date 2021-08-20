@@ -87,7 +87,7 @@ body {
 .myName h1 {
   font-family: Canela, sans-serif;
   color: rgb(141, 173, 147);
-  font-size: 100px;
+  font-size: 110px;
   line-height: 122px;
   font-weight: 300;
   text-shadow: #333;
@@ -122,7 +122,15 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0px auto;
+  /* opacity: 0;
+  transform: translate(0, 10vh);
+  transition: all 1s; */
 }
+/* 
+section {
+  opacity: 1;
+  transform: translate(0, 0);
+} */
 
 .myName img {
   height: 200px;

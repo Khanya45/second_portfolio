@@ -1,5 +1,4 @@
 #textbox input {
-  /* border-radius: 20px; */
   margin: 20px;
   padding: 10px;
   margin-bottom: 5px;
@@ -13,24 +12,24 @@
 #textbox textarea {
   border: none;
   outline: none;
-  /* border-radius: 10px; */
   padding: 10px;
   margin: 10px;
   width: 90%;
   margin-bottom: 10px;
   border-bottom: 1px solid rgb(29, 25, 25);
   background: transparent;
+  margin: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
 }
 
 #submit-btn {
   font-family: sans-serif;
   font-size: 1em;
   width: 20vw;
-  /* border-radius: 5px; */
   margin: 5px;
   padding: 10px;
   margin-bottom: 5px;
-  /* border-radius: 20px; */
   margin: 5px;
   padding: 10px;
   background: #42494e;
@@ -38,6 +37,9 @@
   color: aliceblue;
   border: 0px;
   margin-top: 20px;
+  margin: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
 }
 #submit-btn:hover {
   background: #91817c;
@@ -46,28 +48,23 @@
 }
 
 .contact-container {
-  /* padding: 5%; */
   align-items: center;
   display: flex;
   justify-content: center;
-  /* margin-left: 320px; */
-  /* padding-left: 2%; */
   margin-top: 70px;
-  /* flex-wrap: wrap; */
+  margin: 0px auto;
 }
 
-#heading h1 h2 {
+#heading h1 {
   text-align: center;
+  color: #fff6e6;
 }
 #cont_heading {
-  /* font-size: 350%;
-    font-weight: bold; */
   text-align: center;
   padding-top: 1em;
-  color: black;
+  color: #fff6e6;
   font-size: 4em;
   font-weight: 500;
-  /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); */
 }
 
 #heading {
@@ -75,6 +72,7 @@
   font-weight: 500;
   text-align: center;
   margin-bottom: 10px;
+  color: #fff6e6;
 }
 
 .contact_details p {
@@ -84,14 +82,10 @@
 
 .contact_details {
   color: white;
-  /* background: #6b705c; */
-  /* padding: 5%; */
-  max-width: 60%;
-  /* min-width: 364px; */
+  max-width: 40%;
   height: 390px;
   display: inline-table;
   text-align: left;
-  /* border-radius: 5px; */
   border-radius: 5px;
 }
 .contact_details i {
@@ -113,7 +107,6 @@
 }
 
 form {
-  /* background: rgb(206, 199, 170); */
   background: transparent;
   padding: 3%;
   border-top-right-radius: 5px;
@@ -134,11 +127,14 @@ form {
 .contact_details i {
   margin-bottom: 15px;
 }
-/* 
-.contact_details,
-form {
-  box-shadow: 0 8px 32px 0 rgba(61, 63, 88, 0.37);
-} */
+
+.contact_details h1 {
+  font-family: Canela, sans-serif;
+  color: #fff6e6;
+  font-size: 110px;
+  line-height: 122px;
+  font-weight: 300;
+}
 
 @media screen and (max-width: 1000px) {
   .contact-container {
