@@ -117,11 +117,12 @@ body {
   font-size: 36px;
   line-height: 56px;
   font-weight: 400;
-  height: 100vh;
+  height: 100%;
   max-width: 1140px;
   justify-content: center;
   align-items: center;
   margin: 0px auto;
+  flex-direction: column;
   /* opacity: 0;
   transform: translate(0, 10vh);
   transition: all 1s; */
@@ -161,10 +162,64 @@ section {
   /* margin-top: 50px; */
 }
 
+.button {
+  border-radius: 4px;
+  /* background: #272e31; */
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+  padding: 5px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  display: flex;
+  align-self: flex-start;
+  text-decoration: none;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* =========== CONTACT ME PAGE ============*/
+
 .contact_page {
   background: #292f36;
   height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+/* ================ ABOUT ME ============= */
+.footer {
+  position: inherit;
+  color: #fff6e6;
+  display: flex;
+  margin-top: 100px;
+  bottom: 0;
 }

@@ -89,7 +89,8 @@ let projects = [
 ];
 
 function createCard(card) {
-  let createdCard = `<div class="card" techStack=${card.techStack}>
+  let createdCard = `<div class="card" techStack=${card.techStack} data-aos="fade-up"
+  data-aos-anchor-placement="center-bottom">
       <img src="${card.imgURL}" alt="${card.imgALT}" />
       <div class="overlay">
         <h1>${card.title}</h1>
