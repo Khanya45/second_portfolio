@@ -347,6 +347,11 @@ section {
     line-height: 45px;
   }
 }
+@media screen and (max-width: 655px) {
+  .myName {
+    margin-top: 50px;
+  }
+}
 @media screen and (max-width: 750px) {
   .about_page p {
     font-size: 25px;
