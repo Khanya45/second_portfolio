@@ -98,12 +98,14 @@ function createCard(card) {
         <p>
           ${card.description}
         </p>
-        <a href="${card.liveProjectURL}" target="_blank"
-          ><button>LIVE</button></a
-        >
-        <a href="${card.githubURL}" target="_blank"
-          ><button>CODE</button></a
-        >
+        <div class="btnProject">
+          <a href="${card.liveProjectURL}" target="_blank"
+            ><button>LIVE</button></a
+          >
+          <a href="${card.githubURL}" target="_blank"
+            ><button>CODE</button></a
+          >
+        </div>  
       </div>
     </div>
       `;

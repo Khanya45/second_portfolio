@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/timeline.css" />
     <link rel="stylesheet" href="/landing.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="/navbar.css" />
+    <title>Profile</title>
     <script
       src="https://kit.fontawesome.com/cce18f0ce0.js"
       crossorigin="anonymous"
@@ -14,6 +15,44 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
+    <div class="main">
+      <div class="logo_name">
+        <h1>Khanya Gope</h1>
+      </div>
+      <div class="top-bar">
+        <a href="/index.html#landing_page">Home</a>
+        <a href="/index.html#about_page">About Me</a>
+        <a href="/index.html#portfolio_page">Portfolio</a>
+        <a href="/index.html#contact_page">Contact Me</a>
+      </div>
+      <nav class="navbar">
+        <ul class="navbar-links">
+          <li class="navbar-link">
+            <a href="#landing_page" class="navbar-anchor">HOME</a>
+          </li>
+          <li class="navbar-link">
+            <a href="#about_page" class="navbar-anchor">ABOUT ME</a>
+          </li>
+          <li class="navbar-link">
+            <a href="#portfolio_page" class="navbar-anchor">PORTFOLIO</a>
+          </li>
+          <li class="navbar-link">
+            <a href="/timeline.html" class="navbar-anchor"
+              >SKILLS & EXPERIENCE</a
+            >
+          </li>
+          <li class="navbar-link">
+            <a href="#testimonials" class="navbar-anchor">TESTIMONIALS</a>
+          </li>
+          <li class="navbar-link">
+            <a href="#contact_page" class="navbar-anchor">CONTACT ME</a>
+          </li>
+        </ul>
+        <button class="navbar-button" onclick="toggleNavbar()">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </div>
     <div class="heading_exp">
       <h1>Education</h1>
     </div>
@@ -22,11 +61,13 @@
       <div class="timeline-container">
         <div class="line"></div>
         <div class="timeline-info date_1">
-          <span>March 12, 2016</span>
+          <span>Now</span>
         </div>
         <div class="timeline-items item1" data-aos="fade-left">
+          <div class="timeline-info2 date_1">
+            <span>Now</span>
+          </div>
           <h2>LIFE CHOICES Academy</h2>
-          <h3>Description of my work</h3>
           <p>
             I'm currently getting the hang of coding at Life Choices Academy
             with the desires of turning into a Backend Developer. Learning
@@ -35,9 +76,12 @@
           </p>
         </div>
         <div class="timeline-info date_2">
-          <span>March 12, 2016</span>
+          <span>January, 2021</span>
         </div>
         <div class="timeline-items item2" data-aos="fade-right">
+          <div class="timeline-info2 date_2">
+            <span>January, 2021</span>
+          </div>
           <h2>SHAW ACADEMY</h2>
 
           <h3>Interior Design</h3>
@@ -53,9 +97,12 @@
           </p>
         </div>
         <div class="timeline-info date_3">
-          <span>March 12, 2016</span>
+          <span>November, 2020</span>
         </div>
         <div class="timeline-items item3" data-aos="fade-left">
+          <div class="timeline-info2 date_3">
+            <span>November, 2020</span>
+          </div>
           <h2>CODING SCHOOL (Qubit By Qubit)</h2>
           <h3>Description of my work</h3>
           <p>
@@ -66,9 +113,12 @@
           </p>
         </div>
         <div class="timeline-info date_4">
-          <span>March 12, 2016</span>
+          <span>December, 2020</span>
         </div>
         <div class="timeline-items item4" div data-aos="fade-right">
+          <div class="timeline-info2 date_4">
+            <span>December, 2020</span>
+          </div>
           <h2>MATRIC</h2>
           <h3>Description of my work</h3>
           <p>
@@ -79,9 +129,12 @@
           </p>
         </div>
         <div class="timeline-info date_5">
-          <span>March 12, 2016</span>
+          <span>2018-2019</span>
         </div>
         <div class="timeline-items item5" div data-aos="fade-left">
+          <div class="timeline-info2 date_5">
+            <span>2018-2019</span>
+          </div>
           <h2>CODESPACE</h2>
           <h3>Description of my work</h3>
           <p>
@@ -146,11 +199,15 @@
         <div class="skills">
           <i class="fas fa-database"></i>
         </div>
+        <div class="skills">
+          <i class="fab fa-js"></i>
+        </div>
       </div>
     </section>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+    <script src="/navbar.js"></script>
   </body>
 </html>

@@ -53,6 +53,7 @@
   justify-content: center;
   margin-top: 70px;
   margin: 0px auto;
+  height: 100%;
 }
 
 #heading h1 {
@@ -175,3 +176,12 @@ form {
 }
 
 /* #272e31 */
+@media screen and (max-width: 350px) {
+  .contact_details h1 {
+    font-size: 70px;
+    line-height: 90px;
+  }
+  .contact-container {
+    margin: 0;
+  }
+}

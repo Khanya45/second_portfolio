@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/projects.css" />
     <link rel="stylesheet" href="/contact.css" />
     <link rel="stylesheet" href="/timeline.css" />
+    <link rel="stylesheet" href="/navbar.css" />
     <title>Portfolio</title>
     <script
       src="https://kit.fontawesome.com/cce18f0ce0.js"
@@ -24,8 +25,37 @@
         <a href="#landing_page">Home</a>
         <a href="#about_page">About Me</a>
         <a href="#portfolio_page">Portfolio</a>
+        <!-- <a href="#testimonial_section">Testimonials</a> -->
         <a href="#contact_page">Contact Me</a>
       </div>
+      <nav class="navbar">
+        <ul class="navbar-links">
+          <li class="navbar-link">
+            <a href="#landing_page" class="navbar-anchor">HOME</a>
+          </li>
+          <li class="navbar-link">
+            <a href="#about_page" class="navbar-anchor">ABOUT ME</a>
+          </li>
+          <li class="navbar-link">
+            <a href="#portfolio_page" class="navbar-anchor">PORTFOLIO</a>
+          </li>
+          <li class="navbar-link">
+            <a href="/timeline.html" class="navbar-anchor"
+              >SKILLS & EXPERIENCE</a
+            >
+          </li>
+          </li>
+          <li class="navbar-link">
+            <a href="#testimonial_section" class="navbar-anchor">TESTIMONIALS</a>
+          </li>
+          <li class="navbar-link">
+            <a href="#contact_page" class="navbar-anchor">CONTACT ME</a>
+          </li>
+        </ul>
+        <button class="navbar-button" onclick="toggleNavbar()">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
     </div>
     <section class="landing_page" id="landing_page">
       <div class="myName" data-aos="fade-right" data-aos-duration="900">
@@ -57,16 +87,9 @@
           I fell deeply in love with technology.
         </p>
       </div>
-      <!-- <div class="myinfo">
-        <div>
-          <p><span class="b"> DATE OF BIRTH: </span>16 OCT 2002</p>
-          <p>
-            <span class="b">Languages: </span> English, isiXhosa, isiZulu,
-            Croatian(Hrvatska)
-          </p>
-        </div>
-      </div>-->
-
+      <img
+        src="https://uploads-ssl.webflow.com/5db9ac73ce618b0e1d8f9a6e/5f066c6ff51c553e32efd98c_light-green-arrow-01.png"
+      />
       <a href="/timeline.html" class="button"><span>View Profile </span></a>
     </section>
     <div class="separater"></div>
@@ -80,6 +103,106 @@
       </div>
       <div class="container"></div>
     </section>
+    <div class="separater"></div>
+    <section class="testimonial_page" id="testimonial_section">
+      <h2 class="testi_header">Testimonials</h2>
+      <div class="testi_container">
+          <div class="testi_card">
+              <div class="content">
+                  <p>
+                    Khanya is a sweet and charismatic individual. She is talented
+                    intellectually and poetically. An asset not only to her peers
+                    but I believe at any company as well.
+                  </p>
+                  <div class="testi_img">
+                  <img src="/images/Naeemah.jpg"/>
+                  </div>
+                  <div class="details">
+                      <h2>Naeemah Davis</br>
+                          <span>Peer</span>
+                      </h2>
+                  </div>
+              </div>
+          </div>
+          <div class="testi_card">
+              <div class="content">
+                  <p>
+                    Khanya is one of the best students we have in the academy. Her
+                    ability too learn new technologies is incredible. She posses
+                    great problem solving skills. She has great personality and
+                    works well within a team. I believe she can be a great person to
+                    have in a team as a Junior Full-stack developer.
+                  </p>
+                  <div class="testi_img">
+                  <img src="/images/thapelo-tsotetsi2.jpg"/>
+                  </div>
+                  <div class="details">
+                      <h2>Thapelo Tsotetsi</br>
+                          <span>LECTURER</span>
+                      </h2>
+                  </div>
+              </div>
+          </div>
+          <div class="testi_card">
+            <div class="content">
+                <p>
+                  Khanya regularly produces creative and original projects
+                  well-attuned to the requirements of the briefs. She presents her
+                  ideas without being aggressively over-confident. I recommend
+                  her.
+                </p>
+                <div class="testi_img">
+                <img src="/images/Godwin.png"/>
+                </div>
+                <div class="details">
+                    <h2>Godwin Dzvapatsva</br>
+                        <span>Head of Curriculum and Learning</span>
+                    </h2>
+                </div>
+            </div>
+          </div>
+          <div class="testi_card">
+            <div class="content">
+                <p>
+                  Khanya is a colleague of high calibre, both personally and
+                professionally. On a personal and professional level she has
+                always been willing to support, encourage and assist.She is a
+                strong team player both in supportive role as well as in
+                leadership role and she always adds great value to any project
+                she becomes involved in.
+                </p>
+                <div class="testi_img">
+                <img src="/images/V.kunelisi.jpg"/>
+                </div>
+                <div class="details">
+                    <h2>Vuyani Kunelisi</br>
+                        <span>Peer</span>
+                    </h2>
+                </div>
+            </div>
+          </div>
+          <div class="testi_card">
+            <div class="content">
+                <p>
+                  Khanya is someone that loves to solve problems .She is
+                determined and diligent in her attempts regardless if the task
+                appear to be too difficult. She is someone that is passionate
+                about learning and having someone like her on your team
+                encourage others to do the same.
+                </p>
+                <div class="testi_img">
+                <img src="/images/Gideon_Daniels.jpg"/>
+                </div>
+                <div class="details">
+                    <h2>Gideon Daniels</br>
+                        <span>Peer</span>
+                    </h2>
+                </div>
+            </div>
+          </div>
+      </div>
+  </section>
+
     <!-- <div class="separater"></div> -->
     <section class="contact_page" id="contact_page">
       <div class="contact-container">
@@ -181,5 +304,6 @@
       AOS.init();
     </script>
     <script src="/projects.js"></script>
+    <script src="/navbar.js"></script>
   </body>
 </html>
