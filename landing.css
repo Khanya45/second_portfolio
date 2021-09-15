@@ -231,7 +231,9 @@ section {
   align-items: center;
   flex-direction: column;
 }
-
+.test a {
+  color: rgb(141, 173, 147);
+}
 /* ================ ABOUT ME ============= */
 .footer {
   position: inherit;
